@@ -1,0 +1,1 @@
+../node_modules/@solopass/sdk/src/index.js
