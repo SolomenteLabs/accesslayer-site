@@ -1,20 +1,23 @@
-// solopass-web-ui/vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path'
+import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill'
 
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@solopass/sdk': path.resolve(__dirname, '../../packages/sdk/dist') // 👈 must match this
-    }
+  optimizeDeps: {
+    esbuildOptions: {
+      define: {
+        global: 'globalThis',
+      },
+      plugins: [
+        NodeGlobalsPolyfillPlugin({
+          buffer: true,
+        }),
+      ],
+    },
   },
-  base: './',
-  build: {
-    rollupOptions: {
-      external: ['openai']
-    }
-  }
-});
+  define: {
+    'process.env': {},
+  },
+})
 

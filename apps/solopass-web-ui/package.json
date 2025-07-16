@@ -8,15 +8,29 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/react": "^3.22.0",
+    "@cosmjs/stargate": "^0.34.0",
+    "@cosmos-kit/core": "^2.16.1",
+    "@cosmos-kit/keplr": "^2.15.1",
+    "@cosmos-kit/react": "^2.22.1",
+    "@cosmos-kit/react-lite": "^2.16.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@interchain-ui/react": "^1.26.3",
+    "@keplr-wallet/types": "^0.12.252",
+    "buffer": "^6.0.3",
+    "chain-registry": "^2.0.24",
+    "framer-motion": "^12.23.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "@solopass/sdk": "file:../tools/smartagent"
+    "react-router-dom": "^7.6.3"
   },
   "devDependencies": {
-    "vite": "^5.4.19",
-    "@vitejs/plugin-react": "^4.6.0"
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.6.0",
+    "@walletconnect/types": "2.11.0",
+    "vite": "^5.4.19"
   }
 }
-
-
-
