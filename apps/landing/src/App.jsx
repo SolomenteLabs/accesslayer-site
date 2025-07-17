@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "/logo.png"; // Assumes public/logo.png exists
+import logo from "/logo.png"; // expects logo.png in apps/landing/public
 
 export default function App() {
   return (

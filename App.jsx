@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "/logo.png"; // expects logo.png in apps/landing/public
 
 export default function App() {
   return (
@@ -16,7 +17,7 @@ export default function App() {
       }}
     >
       <img
-        src="/logo.png"
+        src={logo}
         alt="AccessLayer Logo"
         style={{ width: "180px", marginBottom: "20px" }}
       />
@@ -43,3 +44,4 @@ export default function App() {
     </div>
   );
 }
+
