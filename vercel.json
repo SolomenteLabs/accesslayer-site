@@ -1,5 +1,1 @@
-{
-  "outputDirectory": "apps/landing/public",
-  "cleanUrls": true,
-  "trailingSlash": false
-}
+{ "build": { "output": "dist" } }
