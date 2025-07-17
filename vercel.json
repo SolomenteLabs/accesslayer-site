@@ -1,1 +1,9 @@
-{ "build": { "output": "dist" } }
+{
+  "outputDirectory": "apps/landing/public",
+  "rewrites": [
+    {
+      "source": "/demo-v5",
+      "destination": "/demo-v5/index.html"
+    }
+  ]
+}
