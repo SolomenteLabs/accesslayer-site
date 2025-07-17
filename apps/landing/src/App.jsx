@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../public/logo.png"; // Adjust if your logo is stored elsewhere
+import logo from "/logo.png"; // Assumes public/logo.png exists
 
 export default function App() {
   return (
@@ -17,7 +17,7 @@ export default function App() {
       }}
     >
       <img
-        src="/logo.png"
+        src={logo}
         alt="AccessLayer Logo"
         style={{ width: "180px", marginBottom: "20px" }}
       />
@@ -44,3 +44,4 @@ export default function App() {
     </div>
   );
 }
+
